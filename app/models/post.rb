@@ -4,8 +4,6 @@ class Post < ApplicationRecord
   has_many :comments, foreign_key: 'post_id'
   has_many :likes, foreign_key: 'post_id'
 
-  after_create :update_posts_count
-
   def update_posts_count
     author.increment!(:posts_counter)
   end
