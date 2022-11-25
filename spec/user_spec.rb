@@ -1,13 +1,18 @@
 require 'rails_helper'
 
 describe User do
-    it { should validate_presence_of(:name) }
+  it 'is not valid without a name' do
+    user = User.new(name: nil)
+    expect(user).to_not be_valid
+  end
+
+  it 'is not valid if posts counter is not interger' do
+    user = User.new(name: nil, posts_counter: nil)
+    expect(user).to_not be_valid
+  end
+
+  it 'is valid if name is string and post counter is integer' do
+    user = User.new(name: 'joe', posts_counter: 1)
+    expect(user).to be_valid
+  end
 end
-
-#     before do
-#         @user = User.create!(name: nil)
-#     end
-
-#     it "Is invalide if name is nil"
-#       expect(name:nil).should_not be_valid
-# end
