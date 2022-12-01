@@ -1,15 +1,34 @@
 class PostsController < ApplicationController
-  def index; end
+  def show
+    @post = Post.find(params[:id])
+    @user = @post.author
+    @comments = @post.comments.includes(:author)
+  end
 
-  def show; end
+  def index
+    @user = User.find(params[:user_id])
+    @posts = @user.posts.includes(:comments)
+  end
 
-  def new; end
+  def new
+    @post = Post.new
+  end
 
-  def edit; end
+  def create
+    @post = Post.new(params.require(:post).permit(:title, :text))
+  end
 
-  def create; end
+  def edit
+    @post = Post.find(params[:id])
+  end
 
-  def update; end
+  def update
+    @post = Post.find(params[:id])
+    @post.update(params.require(:post).permit(:title, :text))
+  end
 
-  def destroy; end
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+  end
 end

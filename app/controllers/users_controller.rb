@@ -1,15 +1,32 @@
 class UsersController < ApplicationController
-  def index; end
+  
+  def show
+    @user = User.find(params[:id])
+  end
 
-  def show; end
+  def index
+    @user = User.all
+  end
 
-  def new; end
+  def new
+    @user = User.new
+  end
 
-  def edit; end
+  def edit
+    @user = User.find(params[:id])
+  end
 
-  def create; end
+  def create
+    @user = User.new(params.require(:user).permit(:name, :photo, :bio))
+  end
 
-  def update; end
+  def update
+    @user = User.find(params[:id])
+    @user.update(params.require(:user).permit(:name, :photo, :bio))
+  end
 
-  def destroy; end
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+  end
 end
