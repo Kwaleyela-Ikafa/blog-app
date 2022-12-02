@@ -9,10 +9,12 @@
 
   <body>
     <h1>Here is a list of users</h1>
-        <div class="root-container users">
-      <% @users.each do |user| %>
-        <%= render "shared/user_info", user: user %>
-      <%end%>
+    <div class="root-container users">
+        <% @users.each do |user| %>
+          <%= link_to(user) do %>
+            <%= render "shared/user_info", user: user %>
+          <%end%>
+        <%end%>
     </div>
   </body>
 </html>
