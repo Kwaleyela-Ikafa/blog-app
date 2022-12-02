@@ -9,5 +9,21 @@
 
   <body>
     <h1>Here is a list of posts</h1>
+    <div class="root-container posts-comments-container">
+      <%= render 'shared/user_info', user: @user %>
+      <div class="posts-comments">
+        <% @posts.each_with_index do |post, post_no| %>
+          <div class="post-comments">
+            <%= render 'shared/post_info', post: post, post_no: post_no %>
+            <div class="comments">
+              <% post.five_recent_comments.each do |comment| %>
+                <%= render 'shared/comment', comment: comment %>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+        <button class="btn">Pagination</button>
+      </div>
+    </div>
   </body>
 </html>

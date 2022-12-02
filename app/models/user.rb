@@ -7,6 +7,6 @@ class User < ApplicationRecord
   validates_numericality_of :posts_counter, only_integer: true, greater_than_or_equal_to: 0
 
   def three_recent_posts
-    posts.order(created_at: DESC).limit(3)
+    posts.where(author_id: id).last(3)
   end
 end

@@ -9,5 +9,19 @@
 
   <body>
     <h1>This is a post</h1>
+        <div class="root-container post-detail-container">
+      <div class="post-header">
+        <div class="user-name">Post by: <%=@post.author.name%></div>
+        <div class="comments-likes">Comments: <%=@post.comments_counter%>, Likes: <%=@post.likes_counter%></div>
+      </div>
+      <div class="post-detail">
+        <%=@post.text%>
+      </div>
+      <div class="comments">
+        <% @post.comments.each do |comment| %>
+          <%= render 'shared/comment', comment: comment %>
+        <% end %>
+      </div>
+    </div>
   </body>
 </html>

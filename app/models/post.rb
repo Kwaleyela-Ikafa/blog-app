@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  after_save :update_posts_count
   belongs_to :author, class_name: 'User', foreign_key: 'author_id'
   has_many :comments, foreign_key: 'post_id'
   has_many :likes, foreign_key: 'post_id'
@@ -13,6 +14,6 @@ class Post < ApplicationRecord
   end
 
   def five_recent_comments
-    comment.order('created_at DESC').limit(5)
+    Comment.where(post_id: id).last(5)
   end
 end
