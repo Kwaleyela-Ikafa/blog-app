@@ -1,21 +1,75 @@
-# Blog App
+<div align="center">
+
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Microverse README Template</b></h3>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [Blog App] <a name="about-project"></a>
+
+**[Bolg App]** is a simple Ruby on Rails CRUD app
 
 ![image](https://user-images.githubusercontent.com/86778388/203330071-a83a9ec8-0c25-44d3-8731-1ca16492d2da.png)
 
-## Built With
-
+## 🛠 Built With <a name="built-with"></a>
 - Ruby
 - Ruby on Rails
 - PostgreSQL
 
-## Getting Started
-- [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) on your local machine 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> Describe how a new developer could make use of your project.
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+- [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) on your local machine
 - [Install Ruby on Rails](https://guides.rubyonrails.org/v5.1/getting_started.html)
-- Clone [this repository](https://github.com/Meri-MG/Blog-App-Rails)
-  ```
-  git clone git@github.com:Meri-MG/Blog-App-Rails.git
-  ```
-- To get started, In the root directory run:
+
+### Setup
+
+Clone this repository to your desired folder:
+- Clone [this repository](https://github.com/Kwaleyela-Ikafa/blog-app.git)
+
+
+### Install
+
+Install this project with:
   ```
   gem install bundler
   ```
@@ -23,16 +77,26 @@
   ```
   bundle install
   ```
-  To start the server run: 
+### Usage
+
+To run the project, execute the following command:
 
   ```
   rails s
   ```
   Open browser with `localhost:3000`
 
+### Run tests
 
+To run tests, run the following command:
 
-## Author
+- rspec .
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Kwaleyela Musilizo Ikafa**
 
@@ -40,20 +104,39 @@
 - Twitter: [@K_Ikafa](https://twitter.com/K_Ikafa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kwaleyela-musilizo-ikafa/)
 
-## 🤝 Contributing
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Meri-MG/Blog-App-Rails/issues).
+Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## Acknowledgments
+## ⭐️ Show your support <a name="support"></a>
 
-- Thanks to my morning session partners, coding partners and teammates.
+If you like this project...
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-This project is [MIT](./MIT.md) licensed.
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank Microverse
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
