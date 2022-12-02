@@ -6,8 +6,8 @@ class PostsController < ApplicationController
   end
 
   def index
-    @user = User.find(params[:user_id])
-    @posts = @user.posts.includes(:comments)
+    @user = current_user
+    @posts = Post.order(created_at: :desc)
   end
 
   def new
@@ -15,7 +15,13 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(params.require(:post).permit(:title, :text))
+    @user = current_user
+    new_post = Post.new
+    new_post.author_id = current_user.id
+    new_post.title = params[:title]
+    new_post.text = params[:text]
+    new_post.save
+    redirect_back(fallback_location: root_path)
   end
 
   def edit

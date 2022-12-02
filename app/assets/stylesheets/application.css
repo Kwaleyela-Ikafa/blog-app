@@ -73,6 +73,11 @@
   flex-direction: column;
 }
 
+.posts-comments a {
+  color: black;
+  text-decoration: none;
+}
+
 .posts > * {
   margin-bottom: 10px;
 }
