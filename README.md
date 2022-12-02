@@ -1,7 +1,8 @@
 <div align="center">
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="https://user-images.githubusercontent.com/86778388/205303614-88ade5ae-47bf-412a-944d-be2fc6667594.png" alt="logo" width="140"  height="auto" />
   <br/>
+
 
   <h3><b>Microverse README Template</b></h3>
 
@@ -35,15 +36,29 @@
 
 # 📖 [Blog App] <a name="about-project"></a>
 
-**[Bolg App]** is a simple Ruby on Rails CRUD app
-
-![image](https://user-images.githubusercontent.com/86778388/203330071-a83a9ec8-0c25-44d3-8731-1ca16492d2da.png)
+**[Bolg App]** is a simple Ruby on Rails CRUD app that allows the user to post, edit, save, and view their blog posts with time-stamped entries.
 
 ## 🛠 Built With <a name="built-with"></a>
-- Ruby
-- Ruby on Rails
-- PostgreSQL
 
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+  </ul>
+</details>
+
+<details>
+<summary>Database</summary>
+  <ul>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+  </ul>
+</details>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- comming soon ⌛
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -121,7 +136,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project make sure to give it a star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
