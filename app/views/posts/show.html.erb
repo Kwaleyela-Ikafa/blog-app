@@ -21,6 +21,8 @@
         <% @post.comments.each do |comment| %>
           <%= render 'shared/comment', comment: comment %>
         <% end %>
+        <%= render 'comments/comments_form' %>
+        <%= render 'likes/likes_form' %>
       </div>
     </div>
   </body>

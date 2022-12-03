@@ -13,16 +13,19 @@
       <%= render 'shared/user_info', user: @user %>
       <div class="posts-comments">
         <% @posts.each_with_index do |post, post_no| %>
-          <div class="post-comments">
-            <%= render 'shared/post_info', post: post, post_no: post_no %>
-            <div class="comments">
-              <% post.five_recent_comments.each do |comment| %>
-                <%= render 'shared/comment', comment: comment %>
-              <% end %>
+          <%= link_to(post) do %>
+            <div class="post-comments">
+              <%= render 'shared/post_info', post: post, post_no: post_no %>
+              <div class="comments">
+                <% post.five_recent_comments.each do |comment| %>
+                  <%= render 'shared/comment', comment: comment %>
+                <% end %>
+              </div>
             </div>
-          </div>
+          <%end%>
         <% end %>
-        <button class="btn">Pagination</button>
+        <%= render 'posts_form' %>
+        <%# <button class="btn">Pagination</button> %>
       </div>
     </div>
   </body>
