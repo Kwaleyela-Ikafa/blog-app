@@ -18,7 +18,7 @@
         <%=@post.text%>
       </div>
       <div class="comments">
-        <% @post.comments.each do |comment| %>
+        <% @post.comments.includes(:author).each do |comment| %>
           <%= render 'shared/comment', comment: comment %>
         <% end %>
         <%= render 'comments/comments_form' %>
