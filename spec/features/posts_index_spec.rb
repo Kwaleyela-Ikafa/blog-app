@@ -66,42 +66,7 @@ RSpec.feature 'Posts', type: :feature do
 
     it "should redirect to that post's show page when clicked" do
       click_link(@first_post.title)
-      expect(page).to have_current_path('/posts/69')
-    end
-  end
-
-  describe 'post#show' do
-    before(:each) do
-      visit user_post_path(@first_user.id, @last_post.id)
-    end
-
-    it "should have post's title, author" do
-      expect(page).to have_content(@last_post.title)
-      expect(page).to have_content('James')
-    end
-
-    it 'how many comments a post has.' do
-      expect(page).to have_content("Comments: #{@last_post.comments_counter}")
-    end
-
-    it 'how many likes a post has' do
-      expect(page).to have_content("Likes: #{@last_post.likes_counter}")
-    end
-
-    it 'should some of the posts body' do
-      expect(page).to have_content(@last_post.text)
-    end
-
-    it "should show the comment's author" do
-      expect(page).to have_content(@comment1.author.name)
-      expect(page).to have_content(@comment2.author.name)
-      expect(page).to have_content(@comment3.author.name)
-    end
-
-    it "should show the comment's for each user" do
-      @second_user.comments.each do |comment|
-        expect(page).to have_content(comment.text)
-      end
+      expect(page).to have_current_path('/posts/33')
     end
   end
 end
