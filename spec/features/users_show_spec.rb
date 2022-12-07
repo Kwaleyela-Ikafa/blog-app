@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.feature 'Users', type: :feature do
   before(:each) do
     @user = User.create(
-        name: 'James',
-        photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-        bio: 'Teacher from Mexico.'
-      )
+      name: 'James',
+      photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+      bio: 'Teacher from Mexico.'
+    )
     @first_post = Post.create(author: @user, title: 'Hello, one', text: 'This is my first post')
     @second_post = Post.create(author: @user, title: 'Hello, two', text: 'This is my second post')
     @third_post = Post.create(author: @user, title: 'Hello, three', text: 'This is my third post')
@@ -15,11 +15,11 @@ RSpec.feature 'Users', type: :feature do
 
   describe 'user#index' do
     before(:each) do
-        @second_user = User.create(
-            name: 'Ellen',
-            photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
-            bio: 'Teacher from Poland.'
-        )
+      @second_user = User.create(
+        name: 'Ellen',
+        photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
+        bio: 'Teacher from Poland.'
+      )
       @first_post = Post.create(author: @second_user, title: 'Hello, there', text: 'This is my first post')
       visit users_path
     end
