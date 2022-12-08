@@ -14,6 +14,6 @@ class Post < ApplicationRecord
   end
 
   def five_recent_comments
-    Comment.where(post_id: id).last(5)
+    Comment.includes(:author).where(post_id: id).last(5)
   end
 end

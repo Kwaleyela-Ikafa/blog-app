@@ -119,6 +119,12 @@ To run tests, run the following command:
 - Twitter: [@K_Ikafa](https://twitter.com/K_Ikafa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kwaleyela-musilizo-ikafa/)
 
+👤 **Onate Makoji David**
+
+- GitHub: [@acedavon](https://github.com/acedavon)
+- Twitter: [@sharkelshevon](https://twitter.com/sharkleshevon)
+- LinkedIn: [Makoji David](https://www.linkedin.com/in/makoji-david/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
