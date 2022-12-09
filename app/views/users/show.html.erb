@@ -19,7 +19,7 @@
           <% @user.three_recent_posts.each_with_index do |post, post_no| %>
             <%= render 'shared/post_info', post: post, post_no: post_no %>
           <%end%>
-          <%= link_to 'See all posts', posts_path(@user.id), class: "btn"%>
+          <%= link_to 'See all posts', user_posts_path(@user.id), class: "btn"%>
         </div>
       </div>
   </body>
