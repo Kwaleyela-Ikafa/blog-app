@@ -19,7 +19,7 @@
               <%= render 'shared/post_info', post: post, post_no: post_no %>
               <div class="comments">
                 <% post.five_recent_comments.each do |comment| %>
-                  <%= render 'shared/comment', comment: comment %>
+                  <%= render 'shared/comment', comment: comment, user: @user, post: post %>
                 <% end %>
               </div>
             </div>

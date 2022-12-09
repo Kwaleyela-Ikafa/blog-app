@@ -19,7 +19,7 @@
       </div>
       <div class="comments">
         <% @post.comments.includes(:author).each do |comment| %>
-          <%= render 'shared/comment', comment: comment %>
+          <%= render 'shared/comment', comment: comment, post: @post, user: @user %>
         <% end %>
         <%= render 'comments/comments_form' %>
         <%= render 'likes/likes_form' %>

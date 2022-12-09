@@ -36,6 +36,11 @@
   text-decoration: none;
 }
 
+* a {
+  color: black;
+  text-decoration: none;
+}
+
 .user-posts {
   border: 1px solid #000;
   width: 70%;
