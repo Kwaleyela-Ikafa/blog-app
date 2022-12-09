@@ -135,3 +135,13 @@
     width: 100%;
   }
 }
+
+/* Form fields */
+
+.form-field {
+  text-align: center;
+}
+
+.field {
+  justify-content: center;
+}

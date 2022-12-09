@@ -21,7 +21,7 @@ class PostsController < ApplicationController
     new_post.title = params[:title]
     new_post.text = params[:text]
     new_post.save
-    redirect_back(fallback_location: root_path)
+    redirect_back(fallback_location: :authenticated_root)
   end
 
   def edit
